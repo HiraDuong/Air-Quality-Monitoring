@@ -1,0 +1,76 @@
+.search-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.search-location input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding-left: 10px;
+}
+input[type="text"]::placeholder {
+    font-size: 18px;
+    
+}
+.search-location button[type="submit"]{
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* SearchLocation.css */
+.search-location {
+    position: relative;
+    z-index: 2;
+  }
+
+  .search-result {
+    position: fixed;
+    top: 142px;
+    z-index: 3;
+    background-color: white; /* Hoặc màu bạn muốn cho kết quả tìm kiếm */
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 400px; /* Đặt chiều cao tối đa */
+    overflow-y: auto; /* Thêm thanh cuộn nếu kết quả quá dài */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
+    z-index: 1;
+  }
+  
+  .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  z-index: 4;
+  background-color: tomato;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}

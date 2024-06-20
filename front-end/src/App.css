@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Russo One', sans-serif;;
 }
 
 .App-logo {

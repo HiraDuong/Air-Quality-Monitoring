@@ -1,0 +1,41 @@
+.search-result-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 800px;
+  height: 200px;
+  background-color: antiquewhite;
+}
+
+.search-result-item .info-header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-result-item .info-header p:nth-child(odd) {
+  font-weight: bold;
+}   
+
+.search-result-item .location-info {
+  display: flex ;
+  flex-direction: row;
+  gap: 10px;
+    align-items: center;
+}
+
+.search-result-item .location-info p:nth-child(odd) {
+  font-weight: bold;
+}
+
+.search-result-item .item-details {
+    height: 32px;
+    font-size: 20px;
+    background: #cfffcd;
+    cursor: pointer;
+}

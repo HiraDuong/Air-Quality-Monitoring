@@ -1,0 +1,48 @@
+:root{
+    --background: rgba(0, 0, 0, 0.31);
+ 
+
+}
+.home-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    width: 100%;
+    height: auto; /* Đã sửa lại từ height: 100% thành height: auto để có thể thích ứng với nội dung bên trong */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: transparent;
+    overflow-x: hidden; /* Ẩn phần nội dung tràn ra ngoài */
+    white-space: nowrap; /* Ngăn các phần tử con xuống dòng */
+  }
+  
+  .slider-item {
+    margin: 0 20px; /* Đã thay đổi từ 40px thành 20px để giảm khoảng cách giữa các slide */
+    flex: 0 0 auto; /* Không cho phần tử con co dãn */
+    transition: transform 0.3s ease; /* Thêm transition để có hiệu ứng mượt khi chuyển slide */
+  }
+  
+  .slider-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider-button:focus {
+    outline: none; /* Loại bỏ viền bôi đen khi focus vào button */
+  }
+  

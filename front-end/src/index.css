@@ -1,3 +1,32 @@
+:root {
+  --background-color: rgba(170, 137, 137, 0.31);
+  --header-background-color: #909862;
+  --header-border-radius: 40px;
+  --header-font-size: 22px;
+  --header-gap: 10px;
+  --info-font-size: 20px;
+  --info-gap: 10px;
+  --temperature-hot-color: #BE2A09;
+  --temperature-moderate-color: #068751;
+  --temperature-cool-color: rgb(12, 12, 234);
+  --humidity-high-color: rgb(9, 116, 248);
+  --humidity-moderate-color: #068751;
+  --humidity-low-color: #CA9408;
+  --good-color: #068751;
+  --moderate-color: #CA9408;
+  --unhealthy-color: #BE2A09;
+  --gas-high-color: #BE2A09;
+  --gas-low-color: #068751;
+  --gas-moderate-color: #CA9408;
+  --button-background-color: #068751;
+  --weather-downpour-color: #4287f5;
+  --weather-partly-sunny-color: #f7ee00;
+  --weather-shower-color: #42f5f1;
+  --weather-snow-color: #878282;
+  --weather-stormy-color: #cf08f7;
+  --weather-sunny-color: #ff8400;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +34,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

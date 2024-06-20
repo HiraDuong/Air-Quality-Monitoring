@@ -1,0 +1,138 @@
+
+
+.location-item {
+    width: 600px;
+    height: 400px;
+    background-color: var(--background-color);
+    border-radius: var(--header-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location-item .info-header {
+    background-color: var(--header-background-color);
+    height: 80px;
+    border-radius: var(--header-border-radius);
+    font-size: var(--header-font-size);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--header-gap);
+}
+
+.info-header p:nth-child(odd) {
+    font-weight: bold;
+}
+
+.location-item .location-info {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--info-gap);
+    font-size: var(--info-font-size);
+}
+
+.location-info p {
+    font-weight: bold;
+}
+
+.temperature.hot {
+    color: var(--temperature-hot-color);
+}
+
+.temperature.cool {
+    color: var(--temperature-cool-color);
+}
+
+.temperature.moderate {
+    color: var(--temperature-moderate-color);
+}
+
+.humidity.high {
+    color: var(--humidity-high-color);
+}
+
+.humidity.moderate {
+    color: var(--humidity-moderate-color);
+}
+
+.humidity.low {
+    color: var(--humidity-low-color);
+}
+
+.Good {
+    color: var(--good-color);
+}
+
+.Moderate {
+    color: var(--moderate-color);
+}
+
+.Unhealthy {
+    color: var(--unhealthy-color);
+}
+
+p:first-child {
+    margin-left: 20px;
+}
+
+.location-button {
+    background-color: var(--button-background-color);
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.gas.high {
+    color: var(--gas-high-color);
+}
+
+.gas.low {
+    color: var(--gas-low-color);
+}
+
+.gas.moderate {
+    color: var(--gas-moderate-color);
+}
+
+.weather-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.weather-text {
+    vertical-align: middle;
+}
+
+.weather-downpour {
+    color: var(--weather-downpour-color); /* Blue color for Downpour */
+}
+
+.weather-partly-sunny {
+    color: var(--weather-partly-sunny-color); /* Yellow color for PartlySunny */
+}
+
+.weather-shower {
+    color: var(--weather-shower-color); /* Green color for Shower */
+}
+
+.weather-snow {
+    color: var(--weather-snow-color); /* White color for Snow */
+}
+
+.weather-stormy {
+    color: var(--weather-stormy-color); /* Gray color for Stormy */
+}
+
+.weather-sunny {
+    color: var(--weather-sunny-color); /* Yellow color for Sunny */
+}
