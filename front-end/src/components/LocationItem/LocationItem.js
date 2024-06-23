@@ -1,12 +1,15 @@
 import React from "react";
-import "./LocationItem.css"; // Import your CSS file
+import "./LocationItem.css";
 import { Link } from "react-router-dom";
 import { TiWeatherDownpour, TiWeatherPartlySunny, TiWeatherShower, TiWeatherSnow, TiWeatherStormy, TiWeatherSunny } from 'react-icons/ti';
 
 const LocationItem = ({ location }) => {
   let weatherIcon;
   let weatherClass;
+  const formattedLocation = location?.location?.replace(/,/g, "");
 
+  const formattedDeviceId = location.deviceId;
+  
   // Determine weather icon and class based on location.weather
   switch (location.weather) {
     case "Downpour":
@@ -46,8 +49,15 @@ const LocationItem = ({ location }) => {
     aqiColorClass = "Good";
   } else if (location.aqi <= 100) {
     aqiColorClass = "Moderate";
-  } else {
-    aqiColorClass = "Unhealthy";
+  } else if (location.aqi <= 150) {
+    aqiColorClass = "NotGood";
+  } else if (location.aqi <= 200) {     
+    aqiColorClass = "Bad";
+  } else if (location.aqi <= 300) {
+    aqiColorClass = "VeryBad";
+  }
+  else {
+    aqiColorClass = "Hazardous";
   }
 
   return (
@@ -93,21 +103,26 @@ const LocationItem = ({ location }) => {
         <p className={`${aqiColorClass}`}>{location.aqi}</p>
       </div>
       <div className="location-info">
-        <p>Gas Concentration:</p>
+        <p>CO Concentration:</p>
         <p
           className={`gas ${
-            location.ppm > 1000
+            location.ppm > 100.0
               ? "high"
-              : location.ppm > 400
+              : location.ppm > 50.0
               ? "moderate"
               : "low"
           }`}
         >
           {location.ppm}
         </p>
+        ppm
       </div>
-      <Link to={`/details?location=${location.location.replace(/,/g, "")}&id=${location.deviceId}`}>
-        <button className="location-button">View Details</button>
+      <Link
+        to={`/details?location=${formattedLocation}&id=${formattedDeviceId}`}
+        state={{ location: location }}
+        className="location-button"
+      >
+        View Details
       </Link>
     </div>
   );

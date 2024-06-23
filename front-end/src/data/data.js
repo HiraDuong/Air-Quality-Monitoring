@@ -6,8 +6,8 @@ const dataLocationItems = [
         temp: 20,
         humid: 40,
         aqi: 44,
-        ppm: 400,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 4.00,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 124,
@@ -16,8 +16,8 @@ const dataLocationItems = [
         temp: 22,
         humid: 50,
         aqi: 38,
-        ppm: 350,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.50,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 125,
@@ -26,8 +26,8 @@ const dataLocationItems = [
         temp: 25,
         humid: 45,
         aqi: 42,
-        ppm: 380,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.80,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 126,
@@ -36,8 +36,8 @@ const dataLocationItems = [
         temp: 23,
         humid: 55,
         aqi: 50,
-        ppm: 420,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 4.20,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 127,
@@ -46,8 +46,8 @@ const dataLocationItems = [
         temp: 28,
         humid: 60,
         aqi: 36,
-        ppm: 300,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.00,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 128,
@@ -56,8 +56,8 @@ const dataLocationItems = [
         temp: 18,
         humid: 70,
         aqi: 48,
-        ppm: 410,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 4.10,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 129,
@@ -66,8 +66,8 @@ const dataLocationItems = [
         temp: 26,
         humid: 55,
         aqi: 40,
-        ppm: 360,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.60,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 130,
@@ -76,8 +76,8 @@ const dataLocationItems = [
         temp: 30,
         humid: 65,
         aqi: 32,
-        ppm: 320,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.20,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 131,
@@ -86,8 +86,8 @@ const dataLocationItems = [
         temp: 27,
         humid: 50,
         aqi: 35,
-        ppm: 330,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.30,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 132,
@@ -96,8 +96,8 @@ const dataLocationItems = [
         temp: 32,
         humid: 55,
         aqi: 37,
-        ppm: 370,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.70,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 133,
@@ -106,8 +106,8 @@ const dataLocationItems = [
         temp: 22,
         humid: 60,
         aqi: 39,
-        ppm: 390,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.90,
+        time: "2024-06-18T00:00:00Z"
     },
     {
         deviceId: 134,
@@ -116,8 +116,8 @@ const dataLocationItems = [
         temp: 24,
         humid: 45,
         aqi: 41,
-        ppm: 380,
-        time: "2024-06-18T00:00:00Z" // Thêm trường time
+        ppm: 3.80,
+        time: "2024-06-18T00:00:00Z"
     }
 ];
 

@@ -1,246 +1,122 @@
-const dataLocation123 = [
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Downpour",
-        temp: 20,
-        humid: 40,
-        aqi: 44,
-        ppm: 400,
-        time: "2024-06-18T00"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "PartlySunny",
-        temp: 21,
-        humid: 42,
-        aqi: 45,
-        ppm: 405,
-        time: "2024-06-18T01"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Shower",
-        temp: 19,
-        humid: 38,
-        aqi: 43,
-        ppm: 390,
-        time: "2024-06-18T02"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Snow",
-        temp: 18,
-        humid: 37,
-        aqi: 42,
-        ppm: 380,
-        time: "2024-06-18T03"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Stormy",
-        temp: 22,
-        humid: 45,
-        aqi: 46,
-        ppm: 410,
-        time: "2024-06-18T04"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Sunny",
+const dataLocation123 = 
+{
+    deviceId: 123,
+    location: "Hai Ba Trung, Ha Noi",
+    data: [
+      {
+        time: "2024-06-22T17:00:00.000Z",
+        timeAgo: 14,
         temp: 23,
-        humid: 47,
-        aqi: 47,
-        ppm: 420,
-        time: "2024-06-18T05"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Downpour",
-        temp: 20,
-        humid: 44,
-        aqi: 44,
-        ppm: 400,
-        time: "2024-06-18T06"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "PartlySunny",
-        temp: 21,
-        humid: 43,
-        aqi: 45,
-        ppm: 405,
-        time: "2024-06-18T07"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Shower",
-        temp: 19,
-        humid: 39,
-        aqi: 43,
-        ppm: 395,
-        time: "2024-06-18T08"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Snow",
-        temp: 18,
-        humid: 36,
-        aqi: 41,
-        ppm: 385,
-        time: "2024-06-18T09"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Stormy",
-        temp: 22,
-        humid: 46,
-        aqi: 48,
-        ppm: 415,
-        time: "2024-06-18T10"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Sunny",
-        temp: 24,
-        humid: 48,
-        aqi: 49,
-        ppm: 425,
-        time: "2024-06-18T11"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Downpour",
-        temp: 20,
-        humid: 40,
-        aqi: 44,
-        ppm: 400,
-        time: "2024-06-18T12"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "PartlySunny",
-        temp: 21,
         humid: 42,
-        aqi: 45,
-        ppm: 405,
-        time: "2024-06-18T13"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Shower",
-        temp: 19,
-        humid: 38,
-        aqi: 43,
-        ppm: 390,
-        time: "2024-06-18T14"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Snow",
-        temp: 18,
-        humid: 37,
-        aqi: 42,
-        ppm: 380,
-        time: "2024-06-18T15"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Stormy",
-        temp: 22,
-        humid: 45,
-        aqi: 46,
-        ppm: 410,
-        time: "2024-06-18T16"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Sunny",
-        temp: 23,
-        humid: 47,
-        aqi: 47,
-        ppm: 420,
-        time: "2024-06-18T17"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Downpour",
-        temp: 20,
-        humid: 44,
-        aqi: 44,
-        ppm: 400,
-        time: "2024-06-18T18"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "PartlySunny",
+        ppm: 3,
+        aqi: 34
+      },
+      {
+        time: "2024-06-22T18:00:00.000Z",
+        timeAgo: 13,
         temp: 21,
-        humid: 43,
-        aqi: 45,
-        ppm: 405,
-        time: "2024-06-18T19"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Shower",
+        humid: 50,
+        ppm: 5,
+        aqi: 56
+      },
+      {
+        time: "2024-06-22T19:00:00.000Z",
+        timeAgo: 12,
         temp: 19,
-        humid: 39,
-        aqi: 43,
-        ppm: 395,
-        time: "2024-06-18T20"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Snow",
+        humid: 60,
+        ppm: 4,
+        aqi: 45
+      },
+      {
+        time: "2024-06-22T20:00:00.000Z",
+        timeAgo: 11,
         temp: 18,
-        humid: 36,
-        aqi: 41,
-        ppm: 385,
-        time: "2024-06-18T21"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Stormy",
+        humid: 55,
+        ppm: 6,
+        aqi: 66
+      },
+      {
+        time: "2024-06-22T21:00:00.000Z",
+        timeAgo: 10,
         temp: 22,
-        humid: 46,
-        aqi: 48,
-        ppm: 415,
-        time: "2024-06-18T22"
-    },
-    {
-        deviceId: 123,
-        location: "Hai Ba Trung, Ha Noi",
-        weather: "Sunny",
+        humid: 47,
+        ppm: 3,
+        aqi: 34
+      },
+      {
+        time: "2024-06-22T22:00:00.000Z",
+        timeAgo: 9,
+        temp: 20,
+        humid: 70,
+        ppm: 4,
+        aqi: 45
+      },
+      {
+        time: "2024-06-22T23:00:00.000Z",
+        timeAgo: 8,
         temp: 24,
-        humid: 48,
-        aqi: 49,
-        ppm: 425,
-        time: "2024-06-18T23"
-    }
-];
-
+        humid: 35,
+        ppm: 2,
+        aqi: 23
+      },
+      {
+        time: "2024-06-23T00:00:00.000Z",
+        timeAgo: 7,
+        temp: 25,
+        humid: 40,
+        ppm: 5,
+        aqi: 56
+      },
+      {
+        time: "2024-06-23T01:00:00.000Z",
+        timeAgo: 6,
+        temp: 23,
+        humid: 50,
+        ppm: 4,
+        aqi: 45
+      },
+      {
+        time: "2024-06-23T02:00:00.000Z",
+        timeAgo: 5,
+        temp: 19,
+        humid: 60,
+        ppm: 6,
+        aqi: 66
+      },
+      {
+        time: "2024-06-23T03:00:00.000Z",
+        timeAgo: 4,
+        temp: 21,
+        humid: 45,
+        ppm: 3,
+        aqi: 34
+      },
+      {
+        time: "2024-06-23T04:00:00.000Z",
+        timeAgo: 3,
+        temp: 20,
+        humid: 65,
+        ppm: 4,
+        aqi: 45
+      },
+      {
+        time: "2024-06-23T05:00:00.000Z",
+        timeAgo: 2,
+        temp: 22,
+        humid: 37,
+        ppm: 2,
+        aqi: 23
+      },
+      {
+        time: "2024-06-23T06:00:00.000Z",
+        timeAgo: 1,
+        temp: 24,
+        humid: 50,
+        ppm: 5,
+        aqi: 56
+      }
+    ]
+  }
 module.exports = {
     dataLocation123
 };

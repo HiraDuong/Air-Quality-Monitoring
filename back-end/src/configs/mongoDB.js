@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
-
+const dotenv = require('dotenv');
+dotenv.config();
 // URI kết nối tới MongoDB Atlas
-const uri = "mongodb+srv://hirakuminamoto:Duongduong123@iot-sensor.uzmihwy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+//  const uri = "mongodb+srv://hirakuminamoto:Duongduong123@iot-sensor.uzmihwy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
+ const uri = process.env.DATABASE_URL;
 // Các tham số kết nối
 const connectionParams = {
     useNewUrlParser: true,

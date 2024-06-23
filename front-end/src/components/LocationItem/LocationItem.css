@@ -70,8 +70,20 @@
     color: var(--moderate-color);
 }
 
-.Unhealthy {
-    color: var(--unhealthy-color);
+.NotGood {
+    color: var(--not-good-color);
+}
+
+.Bad {
+    color: var(--bad-color);
+}
+
+.VeryBad {
+    color: var(--very-bad-color);
+}
+
+.Hazardous {
+    color: var(--hazardous-color);
 }
 
 p:first-child {

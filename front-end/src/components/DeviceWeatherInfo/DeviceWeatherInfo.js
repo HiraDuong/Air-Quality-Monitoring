@@ -78,12 +78,12 @@ const DeviceWeatherInfo = ({ data, header, time }) => {
         );
     };
 
-    const half = Math.ceil(time.length / 2);
-
+    const half = Math.ceil(time?.length / 2);
+    if(data&&time)
     return (
+        <>
         <div className='device-weather-info'>
-            <p>{header}</p>
-            <table>
+            <table className='data-table'>
                 <thead>
                     {renderData(data.slice(0, half), time.slice(0, half))}
                 </thead>
@@ -92,7 +92,9 @@ const DeviceWeatherInfo = ({ data, header, time }) => {
                 </tbody>
             </table>
         </div>
+        </>
     );
+    else return
 };
 
 export default DeviceWeatherInfo;

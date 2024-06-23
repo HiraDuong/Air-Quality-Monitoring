@@ -1,0 +1,37 @@
+.details label{
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+.details-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+.current-detail-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+
+.btn-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  width: 100px;
+  height: 40px;
+}
+.btn-display:hover{
+  cursor: pointer;
+}
+.display{
+  background-color: aquamarine;
+}

@@ -11,13 +11,21 @@ import {
 } from "react-icons/ti";
 
 const SearchResultItem = ({ item }) => {
+  const formattedLocation = item?.location?.replace(/,/g, "");
+
+  const formattedDeviceId = item.deviceId;
   let aqiColorClass;
   if (item.aqi <= 50) {
     aqiColorClass = "Good";
   } else if (item.aqi <= 100) {
-    aqiColorClass = "Moderate";
-  } else {
-    aqiColorClass = "Unhealthy";
+    aqiColorClass = "NotGood";
+  } else if (item.aqi <= 150) {
+    aqiColorClass = "Bad";
+  } else if (item.aqi <= 200) {
+    aqiColorClass = "VeryBad";
+  }
+  else {
+    aqiColorClass = "Hazardous";
   }
   return (
     <div className="search-result-item">
@@ -57,17 +65,21 @@ const SearchResultItem = ({ item }) => {
         <p className={`${aqiColorClass}`}>{aqiColorClass}</p>
         <p>Air Quality Index:</p>
         <p className={`${aqiColorClass}`}>{item.aqi}</p>
-        <p>Gas Concentration</p>
+        <p>CO Concentration</p>
         <p
           className={`gas ${
-            item.ppm >= 1000 ? "high" : item.ppm >= 400 ? "moderate" : "low"
+            item.ppm >= 100.0 ? "high" : item.ppm >= 50 ? "moderate" : "low"
           }`}
         >
           {item.ppm}
         </p>
       </div>
-      <Link to={`/details?location=${item.location.replace(/,/g, "")}&id=${item.deviceId}`}>
-        <button className="item-details">View Details</button>
+      <Link
+        to={`/details?location=${formattedLocation}&id=${formattedDeviceId}`}
+        state={{ location: item }}
+        className="location-button"
+      >
+        View Details
       </Link>
     </div>
   );

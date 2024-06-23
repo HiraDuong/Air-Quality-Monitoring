@@ -1,36 +1,47 @@
 const mongoose = require('mongoose');
 
-const DeviceDataSchema = new mongoose.Schema({
-    device_id: {
+const Data = {
+    weather: {
         type: String,
-        default: "abc123"
+        required: true
     },
-    username: {
-        type: String,
-        default: "admin"
+    temp: {
+        type: Number,
+        required: true
     },
-    password: {
-        type: String,
-        default: "admin"
+    humid: {
+        type: Number,
+        required: true
     },
-    sensor_data: {
-        humid: {
-            type: Number,
-            
-        },
-        temp: {
-            type: Number,
-            
-        },
-        ppm: {
-            type: Number,
-            
-        },
-        dustDensity: {
-            type: Number,
-            
-        }
+    aqi: {
+        type: Number,
+        required: true
+    },
+    ppm: {
+        type: Number,
+        required: true
+    },
+    time: {
+        type: Date,
+        default: Date.now
     }
-});
+}
 
-module.exports = mongoose.model('DeviceDataModel', DeviceDataSchema);
+const DeviceData = {
+
+   deviceId: {
+      type: Number,
+      required: true
+   },
+    location: {
+        type: String,
+        required: true
+    },
+
+   data:{
+    type : [Data],
+    required: true
+   }
+};
+
+module.exports = mongoose.model('devices', DeviceData);

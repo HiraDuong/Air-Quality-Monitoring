@@ -1,14 +1,13 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    width:40px;
+    width: 40px;
 }
 
 th {
@@ -24,7 +23,20 @@ tr:hover {
     background-color: #ddd;
 }
 
-.device-weather-info{
+.device-weather-info {
     max-width: 350px;
     overflow-y: auto;
+    
+}
+
+.device-weather-info::-webkit-scrollbar {
+    height: 10px;
+}
+
+.device-weather-info::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.device-weather-info::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
